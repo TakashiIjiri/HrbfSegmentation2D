@@ -2,9 +2,107 @@
 
 #include "TOGL.h"
 #include <vector>
-#include "../VIO/SimpleImage.h"
 
 #define INIT_TWODIM_CONST_R 0.1
+
+
+
+
+//3D Image class
+class Image3D 
+{
+public:
+	int sx, sy, sz;
+
+	double*** img;
+
+	int    graylevel;
+
+	double px, py, pz;
+
+	double maxgray;
+
+	Image3D()
+	{
+		graylevel = 0;
+		px = py = pz = 1.0;
+		img = NULL;
+		sx = sy = sz = 0; maxgray = 0.0;
+	}
+
+	Image3D(int dx, int dy, int dz) {
+		sx = dx;
+		sy = dy;
+		sz = dz;
+		graylevel = 0; maxgray = 0.0;
+		px = py = pz = 1.0;
+		int i, j;
+		img = new double** [sz];
+		for (i = 0; i < sz; i++) {
+			img[i] = new double* [dy];
+			for (j = 0; j < sy; j++)img[i][j] = new double[sx];
+		}
+	}
+
+/*
+	void setMaxMin(double* dmax, double* dmin) {
+		(*dmax) = img[0][0][0];
+		(*dmin) = img[0][0][0];
+
+		int i, j, k;
+		for (i = 0; i < sz; i++)
+			for (j = 0; j < sy; j++)
+				for (k = 0; k < sx; k++) {
+					if ((*dmax) < img[i][j][k])(*dmax) = img[i][j][k];
+					if ((*dmin) > img[i][j][k])(*dmin) = img[i][j][k];
+				}
+
+	}
+	void Copy(Image3D* in) {
+		int i, j, k;
+		for (i = 0; i < sz; i++)
+			for (j = 0; j < sy; j++)
+				for (k = 0; k < sx; k++)img[i][j][k] = in->img[i][j][k];
+		graylevel = in->graylevel;
+		maxgray = in->maxgray;
+
+	}
+
+	void setMaxgray() {
+		int i, j, k;
+		maxgray = 0.0;
+		for (i = 0; i < sz; i++)
+			for (j = 0; j < sy; j++)
+				for (k = 0; k < sx; k++) {
+					if (maxgray < img[i][j][k])maxgray = img[i][j][k];
+				}
+		if (maxgray <= 0.0)maxgray = 1.0;
+	}
+
+
+	void scaling(double scale)
+	{
+		for (int i = 0; i < sz; i++)
+			for (int j = 0; j < sy; j++)
+				for (int k = 0; k < sx; k++)
+					img[i][j][k] *= scale;
+	}
+
+	virtual ~Image3D() {
+		int i, j;
+		for (i = 0; i < sz; i++)
+		{
+			for (j = 0; j < sy; j++)
+				delete[] img[i][j];
+			delete[] img[i];
+		}
+		delete[] img;
+	}
+*/
+};
+
+
+
 
 enum CHANNEL_ID
 {

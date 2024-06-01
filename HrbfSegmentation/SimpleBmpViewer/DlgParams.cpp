@@ -102,7 +102,7 @@ void DlgParams::OnBnClickedCheckGradConstFore   (){TCore* t=TCore::getInst(); t-
 void DlgParams::updateChecks()
 {
 	RBFManager *r = RBFManager::getInst();
-	TCore       *t = TCore::getInst();
+	TCore      *t = TCore::getInst();
 
 
 	
@@ -157,7 +157,6 @@ void DlgParams::updateChecks()
 BOOL DlgParams::OnInitDialog()
 {
 	CDialogEx::OnInitDialog();
-
 	updateChecks();
 
 	return TRUE;  // return TRUE unless you set the focus to a control

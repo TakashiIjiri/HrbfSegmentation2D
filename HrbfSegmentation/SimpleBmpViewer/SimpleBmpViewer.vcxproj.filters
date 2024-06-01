@@ -60,44 +60,35 @@
     <ClInclude Include="Resource.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\COMMON\TLIB\tmath.h">
-      <Filter>Common</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\COMMON\TLIB\TOGL.h">
-      <Filter>Common</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\COMMON\TLIB\TOGLImage.h">
-      <Filter>Common</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\COMMON\TLIB\TRBF3D.h">
-      <Filter>Common</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\COMMON\TLIB\tsparsematrix.h">
-      <Filter>Common</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\COMMON\TLIB\Tutil.h">
-      <Filter>Common</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\COMMON\TLIB\TWatershed.h">
-      <Filter>Common</Filter>
-    </ClInclude>
     <ClInclude Include="TCore.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="MouseListener.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\COMMON\TLIB\TGCgraph.h">
-      <Filter>Common</Filter>
-    </ClInclude>
     <ClInclude Include="DlgParams.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\COMMON\TLIB\TTriangleMesh.h">
-      <Filter>Common</Filter>
-    </ClInclude>
     <ClInclude Include="RBFManager.h">
       <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="COMMON\TLIB\tmath.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="COMMON\TLIB\TMatrix.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="COMMON\TLIB\TOGL.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="COMMON\TLIB\TOGLImage.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="COMMON\TLIB\TRBF3D.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="COMMON\TLIB\TTriangleMesh.h">
+      <Filter>Common</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -116,35 +107,29 @@
     <ClCompile Include="SimpleBmpViewerView.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\COMMON\TLIB\TOGLImage.cpp">
-      <Filter>Common</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\COMMON\TLIB\TRBF3D.cpp">
-      <Filter>Common</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\COMMON\TLIB\TSparseMatrix.cpp">
-      <Filter>Common</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\COMMON\TLIB\TWatershed.cpp">
-      <Filter>Common</Filter>
-    </ClCompile>
     <ClCompile Include="TCore.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="MouseListener.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\COMMON\TLIB\TGCgraph.cpp">
-      <Filter>Common</Filter>
-    </ClCompile>
     <ClCompile Include="DlgParams.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\COMMON\TLIB\TTriangleMesh.cpp">
-      <Filter>Common</Filter>
-    </ClCompile>
     <ClCompile Include="RBFManager.cpp">
       <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="COMMON\TLIB\TMatrix.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="COMMON\TLIB\TOGLImage.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="COMMON\TLIB\TRBF3D.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="COMMON\TLIB\TTriangleMesh.cpp">
+      <Filter>Common</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

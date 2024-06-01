@@ -1438,7 +1438,7 @@ bool TDenseMatEx::LU_flipRow( const int idx, const bool allowColFlip )
 	return true;
 }
 
-
+/*
 void TDenseMatEx::Trace(int offset ){
 	fprintf( stderr, "-----TDenseMatEx Trace %d %d\n", m_size, m_size);
 	for( int y = 0; y < m_size; y += offset ){
@@ -1446,6 +1446,8 @@ void TDenseMatEx::Trace(int offset ){
 		fprintf( stderr,"\n");
 	}
 }
+*/
+
 void TDenseMatEx::Trace4(int offset ){
 	fprintf( stderr, "-----TDenseMatEx Trace %d %d\n", m_size, m_size);
 	for( int y = 0; y < m_size; y += offset ){

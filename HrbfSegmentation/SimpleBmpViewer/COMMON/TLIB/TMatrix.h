@@ -376,7 +376,13 @@ public:
 		}
 	}
 
-	inline void Trace        (int offset = 1);
+	inline void Trace(int offset = 1) {
+		fprintf(stderr, "-----TDenseMatEx Trace %d %d\n", m_size, m_size);
+		for (int y = 0; y < m_size; y += offset) {
+			for (int x = 0; x < m_size; x += offset) fprintf(stderr, "%.2f ", m_data[y][x]);
+			fprintf(stderr, "\n");
+		}
+	}
 	inline void Trace4       (int offset = 1);
 	inline void TraceSymmetry(int offset = 1);
 	inline void TraceSign    (int offset = 1);

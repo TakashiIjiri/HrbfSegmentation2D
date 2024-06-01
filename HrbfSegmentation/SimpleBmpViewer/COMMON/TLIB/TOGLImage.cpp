@@ -1850,8 +1850,10 @@ double TOGL3DImage1::triLinearSampling( const TVector3 &cSize, const TVector3 &p
 	if( yi== 0 || H-1== yi) return m_img[idx];;
 	if( zi== 0 || D-1== zi) return m_img[idx];;
 
-	double v[8] = { m_img[idx   ], m_img[idx+1   ], m_img[idx+1+W   ], m_img[idx+W   ], 
-		            m_img[idx+WH], m_img[idx+1+WH], m_img[idx+1+W+WH], m_img[idx+W+WH] };
+	double v[8] = { (double) m_img[idx    ], (double) m_img[idx+1   ], 
+									(double) m_img[idx+1+W], (double) m_img[idx+W   ],
+									(double) m_img[idx+ WH], (double) m_img[idx+1+WH], 
+									(double) m_img[idx+1+W+WH], (double) m_img[idx+W+WH] };
 
 	double p0132 = (1-tx)*(1-ty) * v[0] +  tx *(1-ty) * v[1] +   
 		           (1-tx)*  ty   * v[3] +  tx *  ty   * v[2]; 

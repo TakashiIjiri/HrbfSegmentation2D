@@ -1,6 +1,6 @@
 #include "StdAfx.h"
 #include "RBFManager.h"
-#include "tsparsematrix.h"
+#include "tmatrix.h"
 #include "TCore.h"
 
 double RBFManager::m_approxCoef    = 1;

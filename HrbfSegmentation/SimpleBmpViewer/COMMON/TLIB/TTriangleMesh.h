@@ -234,6 +234,7 @@ public:
 	inline void   GetPolys(vector<TTriangle > &trgt)const{trgt.resize( m_pSize ); for( int i=0; i<m_pSize; ++i) trgt[i]=m_polys[i]; }
 	inline void   GetEdges(vector<TWingEdge > &trgt)const{trgt.resize( m_eSize ); for( int i=0; i<m_eSize; ++i) trgt[i]=m_edges[i]; }
 
+	bool SaveToObjFile(const char* fname);
 protected:
 	void pushbackNewEdge( int num = 1 );//m_edges       ‚Ì––”ö‚É‰Šú‰»‚³‚ê‚½ edge‚ðnumŒÂ’Ç‰Á‚·‚é
 	void pushbackNewPoly( int num = 1 );//m_polys‚Æm_p_*‚Ì––”ö‚É‰Šú‰»‚³‚ê‚½ edge‚ðnumŒÂ’Ç‰Á‚·‚é

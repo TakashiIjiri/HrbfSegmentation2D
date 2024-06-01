@@ -19,6 +19,8 @@ public:
 	}
 };
 
+
+
 class RBF_GradCP{
 public:
 	double dir[3]; // dir(xyr) 3ŽŸŒ³

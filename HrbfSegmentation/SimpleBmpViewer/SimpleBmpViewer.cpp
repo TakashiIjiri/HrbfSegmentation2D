@@ -60,7 +60,8 @@ CSimpleBmpViewerApp::CSimpleBmpViewerApp()
 	SetConsoleScreenBufferSize(GetStdHandle(STD_ERROR_HANDLE), consoleCoord);
 	fprintf( stderr, "start\n" );
 
-	TCore::getInst();
+	TCore::getInst()->initDlg();;
+
 	// TODO: add construction code here,
 	// Place all significant initialization in InitInstance
 }

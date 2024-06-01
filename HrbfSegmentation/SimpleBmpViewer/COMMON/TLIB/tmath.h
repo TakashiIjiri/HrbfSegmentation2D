@@ -3312,7 +3312,7 @@ inline bool t_LoadArrayIntToBin(const char*fname, vector<int> &intValues)
 
 inline void t_save3DVectors        ( FILE *fp, const vector<TVector3> &vec)
 {
-	fprintf( fp, "3DVectors %d\n", vec.size() );
+	fprintf( fp, "3DVectors %d\n", (int) vec.size() );
 	for( int i=0; i<(int)vec.size(); ++i) fprintf( fp, "%f %f %f\n", vec[i].data[0], vec[i].data[1], vec[i].data[2]);
 }
 inline void t_load3DVectors        ( FILE *fp,       vector<TVector3> &vec)

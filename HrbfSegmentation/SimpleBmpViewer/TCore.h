@@ -70,7 +70,7 @@ public:
 	void OnKeyDown( char nChar );
 
 	void updateSegmentation();
-
+	void initDlg();
 	//Mode switch///////////////////////
 	SOLVE_MODE m_solverMode;//1RBF,2RBFÅ§s,3RBFÅ§j,4HRBFÅ§s,5HRBFÅ§j
 	double m_phai, m_theta;

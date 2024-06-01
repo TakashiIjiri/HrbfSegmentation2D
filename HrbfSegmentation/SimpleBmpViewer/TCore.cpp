@@ -1,20 +1,20 @@
 ﻿#include "StdAfx.h"
 #include "TCore.h"
-#include "tsparsematrix.h"
+#include "tmatrix.h"
 #include "Tutil.h"
 
 #include "SimpleBmpViewer.h"
 
 
-#ifndef TGCUT_STATIC_LINK
-#define TGCUT_STATIC_LINK
-#endif 
+//#ifndef TGCUT_STATIC_LINK
+//#define TGCUT_STATIC_LINK
+//#endif 
 
 #ifndef FOREBACK_MAX 
 #define FOREBACK_MAX 1000000000.0
 #endif 
 
-#include "./TGCutDll2010/TGcutStdHead.h" //include after defining the "TGCUT_STATIC_LINK"必要あり
+//#include "./TGCutDll2010/TGcutStdHead.h" //include after defining the "TGCUT_STATIC_LINK"必要あり
 #include <list>
 #include "TRBF3D.h"
 
@@ -98,18 +98,22 @@ TCore::TCore(void)
 	m_ogl.setOrthoModeViewSize(  2.0);
 
 	//load image/////////////////////////////////////////////////////////////////////////
+	/*
 	CString         filter("bmp Files (*.bmp;*.bmp)|*.bmp; *.bmp||");
 	CFileDialog     selDlg(TRUE, NULL, NULL, OFN_HIDEREADONLY, filter);
 	bool bInverted;
 	if (selDlg.DoModal() == IDOK) m_imgOriginal.allocateFromFile( selDlg.GetPathName(), bInverted, &m_ogl );
 	else exit(1);
+*/
+	bool bInverted;
+	m_imgOriginal.allocateFromFile("./img.bmp", bInverted, &m_ogl);
 	const int W = m_imgOriginal.m_width ;
 	const int H = m_imgOriginal.m_height;
 
 	if( W > H ) m_pixPitch = maxImageSize / W;
 	else        m_pixPitch = maxImageSize / H;
 	m_imgSize.Set( W*m_pixPitch, H*m_pixPitch);
-	
+
 	m_imgOriginal.flipImageInY();                  m_imgOriginal.m_DoInterpolation = true ;
 	m_imgSmooth.allocateImage( m_imgOriginal, 0 ); m_imgSmooth  .m_DoInterpolation = false;
 	m_imgVis   .allocateImage( m_imgOriginal, 0 ); m_imgVis     .m_DoInterpolation = true ;
@@ -117,12 +121,12 @@ TCore::TCore(void)
 	for( int i=0; i< 5; ++i) m_imgSmooth.gaussianFilter33();
 
 
-	m_dlg.Create( IDD_DIALOG_PARAM );
-	m_dlg.ShowWindow( SW_SHOW );
+
 
 	m_UVs.resize( W*H);
 	vector<TVector3>  Vs( W*H);
 	vector<TTriangle> Ps; Ps.reserve( W*H*2);
+
 
 	for( int y = 0; y<H-1; ++y)
 	for( int x = 0; x<W-1; ++x){
@@ -143,6 +147,16 @@ TCore::TCore(void)
 	}
 	m_imgManif.updateNormal();
 	m_HRBF_colorDirCoef = 0.5;
+
+
+}
+
+
+void TCore::initDlg(void)
+{
+	m_dlg.Create(IDD_DIALOG_PARAM);
+	m_dlg.ShowWindow(SW_SHOW);
+
 }
 
 
