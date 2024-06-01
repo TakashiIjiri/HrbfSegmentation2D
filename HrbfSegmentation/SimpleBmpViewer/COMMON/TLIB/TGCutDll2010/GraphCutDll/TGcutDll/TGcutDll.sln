@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TGcutDll", "TGcutDll\TGcutDll.vcxproj", "{AB0E10AF-16AF-4693-912F-2D3760370FAD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TGcutDlls", "TGcutDlls\TGcutDlls.vcxproj", "{703BA29F-2E38-495B-8E92-19139901AA7C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+		TGcutDll64|Win32 = TGcutDll64|Win32
+		TGcutDll64|x64 = TGcutDll64|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AB0E10AF-16AF-4693-912F-2D3760370FAD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AB0E10AF-16AF-4693-912F-2D3760370FAD}.Debug|Win32.Build.0 = Debug|Win32
+		{AB0E10AF-16AF-4693-912F-2D3760370FAD}.Debug|x64.ActiveCfg = Debug|x64
+		{AB0E10AF-16AF-4693-912F-2D3760370FAD}.Debug|x64.Build.0 = Debug|x64
+		{AB0E10AF-16AF-4693-912F-2D3760370FAD}.Release|Win32.ActiveCfg = Release|Win32
+		{AB0E10AF-16AF-4693-912F-2D3760370FAD}.Release|Win32.Build.0 = Release|Win32
+		{AB0E10AF-16AF-4693-912F-2D3760370FAD}.Release|x64.ActiveCfg = Release|x64
+		{AB0E10AF-16AF-4693-912F-2D3760370FAD}.Release|x64.Build.0 = Release|x64
+		{AB0E10AF-16AF-4693-912F-2D3760370FAD}.TGcutDll64|Win32.ActiveCfg = TGcutDll64|x64
+		{AB0E10AF-16AF-4693-912F-2D3760370FAD}.TGcutDll64|Win32.Build.0 = TGcutDll64|x64
+		{AB0E10AF-16AF-4693-912F-2D3760370FAD}.TGcutDll64|x64.ActiveCfg = TGcutDll64|x64
+		{AB0E10AF-16AF-4693-912F-2D3760370FAD}.TGcutDll64|x64.Build.0 = TGcutDll64|x64
+		{703BA29F-2E38-495B-8E92-19139901AA7C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{703BA29F-2E38-495B-8E92-19139901AA7C}.Debug|Win32.Build.0 = Debug|Win32
+		{703BA29F-2E38-495B-8E92-19139901AA7C}.Debug|x64.ActiveCfg = Debug|Win32
+		{703BA29F-2E38-495B-8E92-19139901AA7C}.Release|Win32.ActiveCfg = Release|Win32
+		{703BA29F-2E38-495B-8E92-19139901AA7C}.Release|Win32.Build.0 = Release|Win32
+		{703BA29F-2E38-495B-8E92-19139901AA7C}.Release|x64.ActiveCfg = Release|x64
+		{703BA29F-2E38-495B-8E92-19139901AA7C}.Release|x64.Build.0 = Release|x64
+		{703BA29F-2E38-495B-8E92-19139901AA7C}.TGcutDll64|Win32.ActiveCfg = Release|Win32
+		{703BA29F-2E38-495B-8E92-19139901AA7C}.TGcutDll64|Win32.Build.0 = Release|Win32
+		{703BA29F-2E38-495B-8E92-19139901AA7C}.TGcutDll64|x64.ActiveCfg = Release|x64
+		{703BA29F-2E38-495B-8E92-19139901AA7C}.TGcutDll64|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
